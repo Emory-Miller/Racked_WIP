@@ -48,6 +48,9 @@ public class CacheConfiguration {
             createCache(cm, rocks.zipcode.domain.User.class.getName());
             createCache(cm, rocks.zipcode.domain.Authority.class.getName());
             createCache(cm, rocks.zipcode.domain.User.class.getName() + ".authorities");
+            createCache(cm, rocks.zipcode.domain.Rack.class.getName());
+            createCache(cm, rocks.zipcode.domain.Rack.class.getName() + ".reviews");
+            createCache(cm, rocks.zipcode.domain.Review.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
