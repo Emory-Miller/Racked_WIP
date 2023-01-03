@@ -31,7 +31,7 @@ const Header = (props: IHeaderProps) => {
   };
 
   const renderDevRibbon = () =>
-    props.isInProduction === false ? (
+    props.isInProduction === true ? (
       <div className="ribbon dev">
         <a href="">
           <Translate contentKey={`global.ribbon.${props.ribbonEnv}`} />
